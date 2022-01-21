@@ -1,4 +1,4 @@
-package com.java.udemy.datastructures.deepdiveusingjava;
+package com.java.datastructures.sortingalgorithms;
 
 public class SelectionSortImpl {
 
