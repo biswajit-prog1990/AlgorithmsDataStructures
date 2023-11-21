@@ -33,12 +33,13 @@ public class FibonacciSeries {
 
 	public static void main(String[] args) {
 		System.out.print("Enter number of elements:");
-		Scanner in = new Scanner(System.in);
-		int n = in.nextInt();
-		printFibonacci(n);
-		System.out.println();
-		System.out.print(a + " " + b);
-		printFibonacciRecursion(n - 1);
+		try (Scanner in = new Scanner(System.in)) {
+			int n = in.nextInt();
+			printFibonacci(n);
+			System.out.println();
+			System.out.print(a + " " + b);
+			printFibonacciRecursion(n - 1);
+		}
 	}
 
 }
